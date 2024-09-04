@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-15 10:42+0545\n"
+"POT-Creation-Date: 2024-09-04 10:32+0545\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: apps/blog/models.py:10 apps/book/models.py:9 apps/common/models.py:7
 #: apps/common/models.py:43 apps/institution/models.py:9
-#: apps/publisher/models.py:9 apps/school/models.py:8
+#: apps/publisher/models.py:15 apps/school/models.py:8
 msgid "Name"
 msgstr "नाम"
 
@@ -40,11 +40,11 @@ msgstr "श्रेणी नाम"
 msgid "Parent category"
 msgstr "मुख्य वर्ग"
 
-#: apps/blog/models.py:34 apps/book/models.py:48 apps/book/models.py:75
+#: apps/blog/models.py:34 apps/book/models.py:51 apps/book/models.py:82
 msgid "Category"
 msgstr "श्रेणी"
 
-#: apps/blog/models.py:35 apps/book/models.py:49
+#: apps/blog/models.py:35 apps/book/models.py:52
 msgid "Categories"
 msgstr "वर्गहरू"
 
@@ -68,7 +68,7 @@ msgstr "ब्लग वर्ग"
 msgid "Blog Tags"
 msgstr "ब्लग ट्यागहरू"
 
-#: apps/blog/models.py:60 apps/book/models.py:93
+#: apps/blog/models.py:60 apps/book/models.py:100
 msgid "Published Date"
 msgstr "प्रकाशित मिति"
 
@@ -76,31 +76,31 @@ msgstr "प्रकाशित मिति"
 msgid "Publish Type"
 msgstr "प्रकाशित प्रकार"
 
-#: apps/blog/models.py:65 apps/book/models.py:114
+#: apps/blog/models.py:65 apps/book/models.py:122
 msgid "Meta title"
 msgstr "मेटा शीर्षक"
 
-#: apps/blog/models.py:66 apps/book/models.py:115
+#: apps/blog/models.py:66 apps/book/models.py:123
 msgid "Meta Keywords"
 msgstr "मेटा कीवर्डहरू"
 
-#: apps/blog/models.py:67 apps/book/models.py:116
+#: apps/blog/models.py:67 apps/book/models.py:124
 msgid "Meta Description"
 msgstr "मेटा विवरण"
 
-#: apps/blog/models.py:68 apps/book/models.py:117
+#: apps/blog/models.py:68 apps/book/models.py:125
 msgid "Open graph title"
 msgstr "ग्राफ शीर्षक"
 
-#: apps/blog/models.py:69 apps/book/models.py:118
+#: apps/blog/models.py:69 apps/book/models.py:126
 msgid "Open graph description"
 msgstr "ग्राफ विवरण खोल्नुहोस्"
 
-#: apps/blog/models.py:73 apps/book/models.py:122
+#: apps/blog/models.py:73 apps/book/models.py:130
 msgid "Open graph locale"
 msgstr "ग्राफ लोकाल खोल्नुहोस्"
 
-#: apps/blog/models.py:74 apps/book/models.py:123
+#: apps/blog/models.py:74 apps/book/models.py:131
 msgid "Open graph type"
 msgstr "ग्राफ प्रकार खोल्नुहोस्"
 
@@ -128,7 +128,7 @@ msgstr "लेखकको नाम"
 msgid "About author"
 msgstr "लेखकको बारेमा"
 
-#: apps/book/models.py:26 apps/book/models.py:78
+#: apps/book/models.py:26 apps/book/models.py:85
 msgid "Author"
 msgstr "लेखक"
 
@@ -136,108 +136,125 @@ msgstr "लेखक"
 msgid "Authors"
 msgstr "लेखकहरू"
 
-#: apps/book/models.py:58 config/settings.py:317
+#: apps/book/models.py:61 config/settings.py:333
 msgid "English"
 msgstr "अंग्रेजी"
 
-#: apps/book/models.py:59 config/settings.py:318
+#: apps/book/models.py:62 config/settings.py:334
 msgid "Nepali"
 msgstr "नेपाली"
 
-#: apps/book/models.py:60
+#: apps/book/models.py:63
 msgid "Maithali"
 msgstr "मैथली"
 
-#: apps/book/models.py:61
+#: apps/book/models.py:64
 msgid "Tharu"
 msgstr "थारु"
 
-#: apps/book/models.py:64
+#: apps/book/models.py:65
+msgid "Bilingual"
+msgstr "दोभाषे"
+
+#: apps/book/models.py:68
+msgid "ECD"
+msgstr "ई सी डि"
+
+#: apps/book/models.py:69
 msgid "Grade 1"
 msgstr "कक्षा १"
 
-#: apps/book/models.py:65
+#: apps/book/models.py:70
 msgid "Grade 2"
 msgstr "कक्षा २"
 
-#: apps/book/models.py:66
+#: apps/book/models.py:71
 msgid "Grade 3"
 msgstr "कक्षा ३"
 
-#: apps/book/models.py:69 apps/notification/models.py:22
-#: apps/order/models.py:79
+#: apps/book/models.py:72
+msgid "Grade 4"
+msgstr "कक्ष४"
+
+#: apps/book/models.py:73
+msgid "Grade 5"
+msgstr "कक्ष ५"
+
+#: apps/book/models.py:76 apps/notification/models.py:22
+#: apps/order/models.py:126
 msgid "Title"
 msgstr "शीर्षक"
 
-#: apps/book/models.py:73 apps/helpdesk/models.py:24
+#: apps/book/models.py:80 apps/helpdesk/models.py:24
 msgid "Description"
 msgstr "विवरण"
 
-#: apps/book/models.py:81
+#: apps/book/models.py:88
 msgid "Tags"
 msgstr "ट्यागहरू"
 
-#: apps/book/models.py:85 apps/order/models.py:82
+#: apps/book/models.py:92 apps/order/models.py:129
 msgid "ISBN"
 msgstr "आई.एस.बी.एन"
 
-#: apps/book/models.py:88
+#: apps/book/models.py:95
 msgid "Number of pages"
 msgstr "पृष्ठहरू संख्या"
 
-#: apps/book/models.py:90
+#: apps/book/models.py:97 apps/order/models.py:162
 msgid "Language"
 msgstr "भाषा"
 
-#: apps/book/models.py:92
+#: apps/book/models.py:99
 msgid "Weight in grams"
 msgstr "तौलमा वजन"
 
-#: apps/book/models.py:97 apps/order/models.py:83
+#: apps/book/models.py:105 apps/order/models.py:134
 msgid "Edition"
 msgstr "संस्करण"
 
-#: apps/book/models.py:100 apps/order/models.py:106 apps/package/models.py:56
-#: apps/publisher/models.py:41 apps/user/models.py:53 apps/user/models.py:97
+#: apps/book/models.py:108 apps/order/models.py:158 apps/package/models.py:57
+#: apps/publisher/models.py:52 apps/user/models.py:53 apps/user/models.py:97
 msgid "Publisher"
 msgstr "प्रकाशक"
 
-#: apps/book/models.py:104
+#: apps/book/models.py:112 apps/order/models.py:166
 msgid "Grade"
 msgstr "ग्रेड"
 
-#: apps/book/models.py:106
+#: apps/book/models.py:114
 msgid "Is published"
 msgstr "प्रकाशित छ"
 
-#: apps/book/models.py:108 apps/common/models.py:79 apps/common/models.py:102
-#: apps/order/models.py:66 apps/order/models.py:156 apps/order/models.py:180
+#: apps/book/models.py:116 apps/common/models.py:79 apps/common/models.py:102
+#: apps/order/models.py:113 apps/order/models.py:221 apps/order/models.py:245
 #: apps/payment/models.py:44
 msgid "Created by"
 msgstr "द्वारा सिर्जना गरिएको"
 
-#: apps/book/models.py:112 apps/order/models.py:80
+#: apps/book/models.py:120 apps/order/models.py:127
 msgid "Price"
 msgstr "मूल्य"
 
-#: apps/book/models.py:129 apps/book/models.py:153 apps/order/models.py:60
-#: apps/order/models.py:92 apps/package/models.py:15 apps/package/models.py:82
+#: apps/book/models.py:137 apps/book/models.py:161 apps/order/models.py:107
+#: apps/order/models.py:144 apps/package/models.py:16 apps/package/models.py:87
+#: apps/package/models.py:187
 msgid "Book"
 msgstr "पुस्तक"
 
-#: apps/book/models.py:130
+#: apps/book/models.py:138
 msgid "Books"
 msgstr "पुस्तकहरू"
 
-#: apps/book/models.py:149 apps/user/models.py:116
+#: apps/book/models.py:157 apps/user/models.py:116
 msgid "User"
 msgstr "प्रयोगकर्ता"
 
-#: apps/book/models.py:158
+#: apps/book/models.py:166
 msgid "Wish list"
 msgstr "इच्छा सूची"
 
-#: apps/book/models.py:159
+#: apps/book/models.py:167
 msgid "Wish lists"
 msgstr "इच्छा सूचीहरू"
 
@@ -247,12 +264,12 @@ msgstr "पुस्तक पहिले नै इच्छा सूची�
 
 #: apps/common/models.py:20 apps/common/models.py:21 apps/common/models.py:29
 #: apps/common/models.py:47 apps/institution/models.py:12
-#: apps/publisher/models.py:12 apps/school/models.py:11
+#: apps/publisher/models.py:18 apps/school/models.py:11
 msgid "Province"
 msgstr "प्रदेश"
 
 #: apps/common/models.py:34 apps/common/models.py:51
-#: apps/institution/models.py:16 apps/publisher/models.py:16
+#: apps/institution/models.py:16 apps/publisher/models.py:22
 #: apps/school/models.py:15
 msgid "District"
 msgstr "जिल्ला"
@@ -262,8 +279,8 @@ msgid "Districts"
 msgstr "जिल्लाहरू"
 
 #: apps/common/models.py:56 apps/helpdesk/models.py:20
-#: apps/institution/models.py:20 apps/package/models.py:177
-#: apps/publisher/models.py:20 apps/school/models.py:19
+#: apps/institution/models.py:20 apps/package/models.py:286
+#: apps/publisher/models.py:26 apps/school/models.py:19
 msgid "Municipality"
 msgstr "नगरपालिका"
 
@@ -271,12 +288,12 @@ msgstr "नगरपालिका"
 msgid "Municipalities"
 msgstr "नगरपालिकाहरू"
 
-#: apps/common/models.py:69 apps/payment/models.py:61 apps/payment/models.py:62
-#: apps/payment/models.py:67
+#: apps/common/models.py:69 apps/payment/models.py:62 apps/payment/models.py:63
+#: apps/payment/models.py:68
 msgid "Payment"
 msgstr ""
 
-#: apps/common/models.py:70 apps/order/models.py:100 apps/order/models.py:166
+#: apps/common/models.py:70 apps/order/models.py:152 apps/order/models.py:231
 msgid "Order"
 msgstr "अर्डर"
 
@@ -304,7 +321,7 @@ msgstr ""
 msgid "Flies"
 msgstr ""
 
-#: apps/common/tasks.py:15
+#: apps/common/tasks.py:16
 msgid ""
 "If you are having trouble with the button above, copy and paste the URL "
 "below into your web browser."
@@ -319,7 +336,7 @@ msgid "Email address"
 msgstr ""
 
 #: apps/helpdesk/models.py:23 apps/institution/models.py:24
-#: apps/publisher/models.py:24 apps/school/models.py:23
+#: apps/publisher/models.py:30 apps/school/models.py:23
 msgid "Local address"
 msgstr ""
 
@@ -351,26 +368,27 @@ msgstr ""
 msgid "Faqs"
 msgstr ""
 
-#: apps/institution/models.py:23 apps/publisher/models.py:23
+#: apps/institution/models.py:23 apps/publisher/models.py:29
 #: apps/school/models.py:22
 msgid "Ward Number"
 msgstr ""
 
-#: apps/institution/models.py:30 apps/publisher/models.py:30
+#: apps/institution/models.py:30 apps/publisher/models.py:36
 #: apps/school/models.py:29
 msgid "Pan number"
 msgstr ""
 
-#: apps/institution/models.py:37 apps/publisher/models.py:37
+#: apps/institution/models.py:37 apps/publisher/models.py:43
 #: apps/school/models.py:36
 msgid "Vat number"
 msgstr ""
 
-#: apps/institution/models.py:41 apps/user/models.py:93
+#: apps/institution/models.py:44 apps/order/models.py:15
+#: apps/package/models.py:229 apps/package/models.py:264 apps/user/models.py:93
 msgid "Institution"
 msgstr ""
 
-#: apps/institution/models.py:42
+#: apps/institution/models.py:45
 msgid "Institutions"
 msgstr ""
 
@@ -406,90 +424,115 @@ msgstr ""
 msgid "Notifications"
 msgstr ""
 
-#: apps/order/models.py:38
+#: apps/order/models.py:14 apps/package/models.py:129
+#: apps/package/models.py:263 apps/school/models.py:46 apps/user/models.py:101
+msgid "School"
+msgstr "विद्यालय"
+
+#: apps/order/models.py:22
+msgid "Order window type"
+msgstr ""
+
+#: apps/order/models.py:74
 msgid "Start date should not be greater than end date"
 msgstr ""
 
-#: apps/order/models.py:43
-#, python-format
-msgid "This order window conflicts with another order window with id: %(id)d"
+#: apps/order/models.py:78
+msgid "Order window type is required"
 msgstr ""
 
-#: apps/order/models.py:68 apps/order/models.py:81 apps/package/models.py:10
-#: apps/package/models.py:77
+#: apps/order/models.py:83
+#, python-format
+msgid ""
+"This school order window conflicts with another order window with id: %(id)d"
+msgstr ""
+
+#: apps/order/models.py:90
+#, python-format
+msgid ""
+"This institution order window conflicts with another order window with id: "
+"%(id)d"
+msgstr ""
+
+#: apps/order/models.py:115 apps/order/models.py:128 apps/package/models.py:11
+#: apps/package/models.py:82 apps/package/models.py:182
 msgid "Quantity"
 msgstr "मात्रा"
 
-#: apps/order/models.py:71
+#: apps/order/models.py:118
 msgid "Cart Item"
 msgstr "कार्ट सामाग्री"
 
-#: apps/order/models.py:72
+#: apps/order/models.py:119
 msgid "Cart Items"
 msgstr "कार्ट सामाग्रीहरू"
 
-#: apps/order/models.py:84 apps/order/models.py:145
+#: apps/order/models.py:136 apps/order/models.py:210
 msgid "Total Price"
 msgstr "कुल रकम"
 
-#: apps/order/models.py:110
+#: apps/order/models.py:170
 msgid "Book Order"
 msgstr "पुस्तक अर्डर"
 
-#: apps/order/models.py:111
+#: apps/order/models.py:171
 msgid "Book Orders"
 msgstr "पुस्तक अर्डरहरू"
 
-#: apps/order/models.py:139 apps/package/models.py:34
-#: apps/package/models.py:101 apps/package/models.py:152
-#: apps/payment/models.py:18
+#: apps/order/models.py:201 apps/package/models.py:35
+#: apps/package/models.py:106 apps/package/models.py:206
+#: apps/package/models.py:257 apps/payment/models.py:18
 msgid "Pending"
 msgstr "विचाराधीन"
 
-#: apps/order/models.py:140
+#: apps/order/models.py:202
 msgid "IN TRANSIT"
 msgstr "ट्रान्जिट मा"
 
-#: apps/order/models.py:141
+#: apps/order/models.py:203
 msgid "Completed"
 msgstr "पूरा भयो"
 
-#: apps/order/models.py:142 apps/payment/models.py:20
+#: apps/order/models.py:204 apps/payment/models.py:20
 msgid "Cancelled"
 msgstr "रद्द गरियो"
 
-#: apps/order/models.py:151
+#: apps/order/models.py:216
 msgid "Order placed at"
 msgstr "मा अर्डर राखिएको"
 
-#: apps/order/models.py:162
+#: apps/order/models.py:227
 msgid "Order status"
 msgstr "अर्डर स्टेटस"
 
-#: apps/order/models.py:167
+#: apps/order/models.py:232
 msgid "Orders"
 msgstr "अर्डरहरू"
 
-#: apps/order/serializers.py:38
+#: apps/order/serializers.py:39
 #, python-format
 msgid ""
 "Only %(new_count)d books are allowed. Current request has %(allowed_count)d "
 "books."
 msgstr ""
 
-#: apps/order/serializers.py:51
+#: apps/order/serializers.py:52
 msgid "Book is already added in cart."
 msgstr "पुस्तक पहिले नै कार्टमा राखिएको छ।"
 
-#: apps/order/serializers.py:69
+#: apps/order/serializers.py:70
 msgid "Your cart is empty."
 msgstr "तपाईंको कार्ट खाली छ।"
 
-#: apps/order/serializers.py:75
+#: apps/order/serializers.py:76
 msgid "No active order window available right now."
 msgstr ""
 
-#: apps/order/serializers.py:150
+#: apps/order/serializers.py:149 apps/order/serializers.py:153
+msgid "Order is packed, you can not cancel order."
+msgstr ""
+
+#: apps/order/serializers.py:162
 #, python-format
 msgid "Changing from %(current_status)s to %(status)s is not allowed!!"
 msgstr ""
@@ -502,132 +545,177 @@ msgstr "पुस्तक अर्डर पूरा भयो।"
 msgid "Book order cancelled."
 msgstr "पुस्तक अर्डर रद्द गरियो।"
 
-#: apps/package/models.py:21 apps/package/models.py:195
+#: apps/package/models.py:22 apps/package/models.py:308
 #, fuzzy
 #| msgid "Published Date"
 msgid "Publisher package"
 msgstr "प्रकाशित मिति"
 
-#: apps/package/models.py:25
+#: apps/package/models.py:26
 msgid "Publisher package related book"
 msgstr ""
 
-#: apps/package/models.py:26
+#: apps/package/models.py:27
 #, fuzzy
 #| msgid "Published Date"
 msgid "Publisher related books"
 msgstr "प्रकाशित मिति"
 
-#: apps/package/models.py:35 apps/package/models.py:103
-#: apps/package/models.py:154
+#: apps/package/models.py:36 apps/package/models.py:108
+#: apps/package/models.py:208 apps/package/models.py:259
 msgid "Issue"
 msgstr ""
 
-#: apps/package/models.py:36 apps/package/models.py:104
-#: apps/package/models.py:155
+#: apps/package/models.py:37 apps/package/models.py:109
+#: apps/package/models.py:209 apps/package/models.py:260
 msgid "Delivered"
 msgstr ""
 
-#: apps/package/models.py:47
+#: apps/package/models.py:48
 msgid "Publisher package status"
 msgstr ""
 
-#: apps/package/models.py:50
+#: apps/package/models.py:51
 #, fuzzy
 #| msgid "Published Date"
 msgid "Publisher related order"
 msgstr "प्रकाशित मिति"
 
-#: apps/package/models.py:62 apps/package/models.py:130
-#: apps/package/models.py:172
+#: apps/package/models.py:63 apps/package/models.py:135
+#: apps/package/models.py:235 apps/package/models.py:281
 msgid "Order window"
 msgstr ""
 
-#: apps/package/models.py:64 apps/package/models.py:132
-#: apps/package/models.py:174
+#: apps/package/models.py:65 apps/package/models.py:137
+#: apps/package/models.py:237 apps/package/models.py:283
 #, fuzzy
 #| msgid "Total Price"
 msgid "Total price"
 msgstr "कुल रकम"
 
-#: apps/package/models.py:65 apps/package/models.py:133
-#: apps/package/models.py:175
+#: apps/package/models.py:66 apps/package/models.py:138
+#: apps/package/models.py:238 apps/package/models.py:284
 #, fuzzy
 #| msgid "Quantity"
 msgid "Total quantity"
 msgstr "मात्रा"
 
-#: apps/package/models.py:69
+#: apps/package/models.py:67
+msgid "Incentive"
+msgstr ""
+
+#: apps/package/models.py:74
 #, fuzzy
 #| msgid "Published Date"
 msgid "Publisher Package"
 msgstr "प्रकाशित मिति"
 
-#: apps/package/models.py:70
+#: apps/package/models.py:75
 #, fuzzy
 #| msgid "Publishers"
 msgid "Publisher packages"
 msgstr "प्रकाशकहरू"
 
-#: apps/package/models.py:88 apps/package/models.py:188
+#: apps/package/models.py:93 apps/package/models.py:301
 #, fuzzy
 #| msgid "School"
 msgid "School package"
 msgstr "विद्यालय"
 
-#: apps/package/models.py:92
+#: apps/package/models.py:97
 msgid "School package related book"
 msgstr ""
 
-#: apps/package/models.py:93
+#: apps/package/models.py:98
 msgid "School package related books"
 msgstr ""
 
-#: apps/package/models.py:102 apps/package/models.py:153
+#: apps/package/models.py:107 apps/package/models.py:207
+#: apps/package/models.py:258
 msgid "In transit"
 msgstr ""
 
-#: apps/package/models.py:115
+#: apps/package/models.py:120
 msgid "School package status"
 msgstr ""
 
-#: apps/package/models.py:118
+#: apps/package/models.py:123
 msgid "School related order"
 msgstr ""
 
-#: apps/package/models.py:124 apps/school/models.py:46 apps/user/models.py:101
-msgid "School"
-msgstr "विद्यालय"
-
-#: apps/package/models.py:138 apps/package/models.py:202
+#: apps/package/models.py:143 apps/package/models.py:243
+#: apps/package/models.py:315
 msgid "Courier package"
 msgstr ""
 
-#: apps/package/models.py:143
+#: apps/package/models.py:145 apps/package/models.py:289
+msgid "Is eligible for incentive"
+msgstr ""
+
+#: apps/package/models.py:149
 #, fuzzy
 #| msgid "School"
 msgid "School Package"
 msgstr "विद्यालय"
 
-#: apps/package/models.py:144
+#: apps/package/models.py:150
 #, fuzzy
 #| msgid "Schools"
 msgid "School packages"
 msgstr "विद्यालयहरू"
 
-#: apps/package/models.py:166
+#: apps/package/models.py:193 apps/package/models.py:248
+#: apps/package/models.py:322
+#, fuzzy
+#| msgid "Institutional User"
+msgid "Institution package"
+msgstr "संस्थागत प्रयोगकर्ता"
+
+#: apps/package/models.py:197
+msgid "Institution package related book"
+msgstr ""
+
+#: apps/package/models.py:198
+#, fuzzy
+#| msgid "Published Date"
+msgid "Institution package related books"
+msgstr "प्रकाशित मिति"
+
+#: apps/package/models.py:220
+#, fuzzy
+#| msgid "Institutional User"
+msgid "Institution package status"
+msgstr "संस्थागत प्रयोगकर्ता"
+
+#: apps/package/models.py:223
+#, fuzzy
+#| msgid "Institutional User"
+msgid "Institution related order"
+msgstr "संस्थागत प्रयोगकर्ता"
+
+#: apps/package/models.py:249
+#, fuzzy
+#| msgid "Institutional User"
+msgid "Institution packages"
+msgstr "संस्थागत प्रयोगकर्ता"
+
+#: apps/package/models.py:275
 msgid "Courier package status"
 msgstr ""
 
-#: apps/package/models.py:182
+#: apps/package/models.py:291
+msgid "Package type"
+msgstr ""
+
+#: apps/package/models.py:295
 msgid "Courier Package"
 msgstr ""
 
-#: apps/package/models.py:183
+#: apps/package/models.py:296
 msgid "Courier Packages"
 msgstr ""
 
-#: apps/package/serializers.py:59 apps/payment/serializers.py:17
+#: apps/package/serializers.py:63 apps/payment/serializers.py:17
 msgid "Invalid file"
 msgstr ""
 
@@ -675,11 +763,31 @@ msgstr ""
 msgid "Modified by"
 msgstr ""
 
-#: apps/payment/models.py:75 apps/payment/models.py:76
+#: apps/payment/models.py:76 apps/payment/models.py:77
 msgid "Payment log"
 msgstr ""
 
-#: apps/publisher/models.py:42
+#: apps/publisher/models.py:8
+msgid "Parichaya"
+msgstr ""
+
+#: apps/publisher/models.py:9
+msgid "Bhundipuran"
+msgstr ""
+
+#: apps/publisher/models.py:10
+msgid "Kathalaya"
+msgstr ""
+
+#: apps/publisher/models.py:11
+msgid "Ekata"
+msgstr ""
+
+#: apps/publisher/models.py:47
+msgid "Internal code"
+msgstr ""
+
+#: apps/publisher/models.py:53
 msgid "Publishers"
 msgstr "प्रकाशकहरू"
 
@@ -693,15 +801,15 @@ msgstr "विद्यालय"
 msgid "Schools"
 msgstr "विद्यालयहरू"
 
-#: apps/user/admin.py:17
+#: apps/user/admin.py:37
 msgid "Personal info"
 msgstr ""
 
-#: apps/user/admin.py:19
+#: apps/user/admin.py:39
 msgid "Permissions"
 msgstr ""
 
-#: apps/user/admin.py:32
+#: apps/user/admin.py:52
 msgid "Important dates"
 msgstr ""
 
@@ -747,69 +855,57 @@ msgstr "द्वारा सिर्जना गरिएको"
 msgid "Users"
 msgstr ""
 
-#: apps/user/mutations.py:284
+#: apps/user/mutations.py:287
 msgid "Only allowed for moderator users."
 msgstr ""
 
-#: apps/user/serializers.py:51 apps/user/serializers.py:56
+#: apps/user/serializers.py:52 apps/user/serializers.py:57
 #, python-format
 msgid "Please try again in %s seconds."
 msgstr ""
 
-#: apps/user/serializers.py:70 apps/user/serializers.py:144
-#: apps/user/serializers.py:237
+#: apps/user/serializers.py:71 apps/user/serializers.py:157
+#: apps/user/serializers.py:251 apps/user/serializers.py:257
 msgid "The captcha is invalid."
 msgstr ""
 
-#: apps/user/serializers.py:81
+#: apps/user/serializers.py:83
 msgid ""
 "Your accout is not active, please click the activation link we sent to your "
 "email"
 msgstr ""
 
-#: apps/user/serializers.py:184
-msgid "Activate your account."
+#: apps/user/serializers.py:87
+msgid "Your accout deactivated, please contact administrator"
 msgstr ""
 
-#: apps/user/serializers.py:185
-msgid "Please click on the link to confirm your registration"
-msgstr ""
-
-#: apps/user/serializers.py:192
-msgid "Activate your account"
-msgstr ""
-
-#: apps/user/serializers.py:194
-msgid "Activate Account"
-msgstr ""
-
-#: apps/user/serializers.py:223
+#: apps/user/serializers.py:236
 msgid "Activation link is not valid."
 msgstr ""
 
-#: apps/user/serializers.py:252
+#: apps/user/serializers.py:270
 msgid ""
 "We received a request to reset your account password. If you wish to do so, "
 "please click below. Otherwise, you may safely discard this email."
 msgstr ""
 
-#: apps/user/serializers.py:259
+#: apps/user/serializers.py:277
 msgid "User with this email does not exists"
 msgstr ""
 
-#: apps/user/serializers.py:260
+#: apps/user/serializers.py:278
 msgid "Reset password"
 msgstr ""
 
-#: apps/user/serializers.py:262 apps/user/serializers.py:264
+#: apps/user/serializers.py:280 apps/user/serializers.py:282
 msgid "Reset Password"
 msgstr ""
 
-#: apps/user/serializers.py:302
+#: apps/user/serializers.py:320
 msgid "The token is invalid."
 msgstr ""
 
-#: apps/user/serializers.py:364
+#: apps/user/serializers.py:384
 msgid "Can not activate/deactivate verifield user"
 msgstr ""
 
@@ -821,6 +917,6 @@ msgstr ""
 msgid "You are not authenticated"
 msgstr ""
 
-#: config/urls.py:66
+#: config/urls.py:69
 msgid "Kitab Bazar administration"
 msgstr ""
