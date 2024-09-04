@@ -77,8 +77,8 @@ class Command(BaseCommand):
     help = 'Load books from csv'
     """
     # WIP: This is for one time use only.
-    docker-compose exec server ./manage.py loaddata provinces districts municipalities
-    cat data.csv | docker-compose exec -T server ./manage.py import_books_from_csv http://172.17.0.1:8080
+    docker compose exec server ./manage.py loaddata provinces districts municipalities
+    cat data.csv | docker compose exec -T server ./manage.py import_books_from_csv http://172.17.0.1:8080
     """
 
     def add_arguments(self, parser):
